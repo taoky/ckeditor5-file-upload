@@ -11,13 +11,16 @@
     "plugin"
   ],
   "dependencies": {
-    "@ckeditor/ckeditor5-core": "^17.0.0",
-    "@ckeditor/ckeditor5-upload": "^17.0.0",
-    "@ckeditor/ckeditor5-ui": "^17.0.0",
-    "@ckeditor/ckeditor5-clipboard": "^17.0.0",
-    "@ckeditor/ckeditor5-engine": "^17.0.0",
-    "@ckeditor/ckeditor5-utils": "^17.0.0",
-    "@ckeditor/ckeditor5-widget": "^17.0.0"
+    "ckeditor5": "40.2.0",
+    "@ckeditor/ckeditor5-core": "40.2.0",
+    "@ckeditor/ckeditor5-upload": "40.2.0",
+    "@ckeditor/ckeditor5-ui": "40.2.0",
+    "@ckeditor/ckeditor5-clipboard": "40.2.0",
+    "@ckeditor/ckeditor5-engine": "40.2.0",
+    "@ckeditor/ckeditor5-utils": "40.2.0",
+    "@ckeditor/ckeditor5-widget": "40.2.0",
+    "@ckeditor/ckeditor5-package-tools": "^1.1.0",
+    "@ckeditor/ckeditor5-theme-lark": "40.2.0"
   },
   "repository": {
     "type": "git",
@@ -31,6 +34,7 @@
   "homepage": "https://github.com/eMAGTechLabs/ckeditor5-file-upload#readme",
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dll:build": "ckeditor5-package-tools dll:build"
   }
 }

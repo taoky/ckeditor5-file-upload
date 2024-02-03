@@ -1,0 +1,23 @@
+{
+	"plugins": [
+		{
+			"name": "FileUpload",
+			"className": "FileUpload",
+			"description": "Adds classic file upload to the editor.",
+			"path": "src/fileupload.js",
+			"uiComponents": [
+				{
+					"name": "fileupload",
+					"type": "Button",
+					"iconPath": "theme/icons/fileupload.svg"
+				}
+			]
+		},
+		{
+			"name": "SimpleFileUploadAdapter",
+			"className": "SimpleFileUploadAdapter",
+			"description": "A simple file upload adapter",
+			"path": "src/simplefileuploadadapter.js"
+		}
+	]
+}

@@ -1,4 +1,4 @@
-import {findOptimalInsertionRange} from '@ckeditor/ckeditor5-widget/src/utils';
+import { findOptimalInsertionRange } from 'ckeditor5/src/widget';
 import {mimeTypes} from './mimeTypes';
 
 /* global fetch, File */

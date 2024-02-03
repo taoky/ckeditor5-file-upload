@@ -1,6 +1,5 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import FileRepository from '@ckeditor/ckeditor5-upload/src/filerepository';
-import { attachLinkToDocumentation } from '@ckeditor/ckeditor5-utils/src/ckeditorerror';
+import { Plugin } from 'ckeditor5/src/core';
+import { FileRepository } from 'ckeditor5/src/upload';
 
 export default class SimpleFileUploadAdapter extends Plugin {
     /**
@@ -28,9 +27,9 @@ export default class SimpleFileUploadAdapter extends Plugin {
         }
 
         if ( !options.url ) {
-            console.warn( attachLinkToDocumentation(
+            console.warn(
                 'simple-upload-adapter-missing-uploadUrl: Missing the "uploadUrl" property in the "simpleUpload" editor configuration.'
-            ) );
+            );
 
             return;
         }

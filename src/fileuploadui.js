@@ -1,5 +1,5 @@
-import Plugin from '@ckeditor/ckeditor5-core/src/plugin';
-import FileDialogButtonView from '@ckeditor/ckeditor5-upload/src/ui/filedialogbuttonview';
+import { Plugin } from 'ckeditor5/src/core';
+import { FileDialogButtonView } from 'ckeditor5/src/upload';
 import fileUploadIcon from '../theme/icons/fileupload.svg';
 
 /**

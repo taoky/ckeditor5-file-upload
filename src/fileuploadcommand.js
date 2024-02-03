@@ -1,5 +1,5 @@
-import FileRepository from '@ckeditor/ckeditor5-upload/src/filerepository';
-import Command from '@ckeditor/ckeditor5-core/src/command';
+import { FileRepository } from 'ckeditor5/src/upload';
+import { Command } from 'ckeditor5/src/core';
 import { insertFileLink, isFileAllowed } from './utils';
 
 export default class FileUploadCommand extends Command {
