@@ -80,6 +80,13 @@ export default class FileUploadEditing extends Plugin {
 				return fileTypes.test( file.type );
 			} );
 
+			// targetRanges could be null
+			// See https://ckeditor.com/docs/ckeditor5/latest/api/module_clipboard_clipboardobserver-ClipboardInputEventData.html#member-targetRanges
+			if (!data.targetRanges) {
+				// Well, by returning here we are not supporting pasting files into the editor.
+				// This is an acceptable trade-off for now.
+				return;
+			}
 			const ranges = data.targetRanges.map( viewRange => editor.editing.mapper.toModelRange( viewRange ) );
 
 			editor.model.change( writer => {
